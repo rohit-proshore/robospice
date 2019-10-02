@@ -103,6 +103,8 @@ public abstract class SpiceService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+        
+        startForeground(1,new Notification());
 
         try {
             cacheManager = createCacheManager(getApplication());
